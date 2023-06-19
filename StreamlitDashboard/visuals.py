@@ -5,7 +5,7 @@ from streamlit_folium import st_folium
 import streamlit as st 
 import networkx as nx
 
-pes_df = pd.read_csv(r"C:\OMDENA\Project\sao-paulo-chapter-passenger-demand\src\tasks\task_2_eda_dashboards\data\alllines_pes_complete.csv")
+pes_df = pd.read_csv(r"StreamlitDashboard/alllines_pes_complete.csv")
 pes_df['date'] = pd.to_datetime(pes_df['date'])
 
 metro_stations = {
