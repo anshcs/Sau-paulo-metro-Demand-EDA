@@ -257,7 +257,7 @@ def ShowMap(month,year,line):
 
 
 def CreateGraph():
-    avg_time_df = pd.read_csv(r"C:\OMDENA\Project\sao-paulo-chapter-passenger-demand\src\tasks\task_3_model_training_validation\Ansh_models\metro_lines_info.csv")
+    avg_time_df = pd.read_csv(r"StreamlitDashboard/metro_lines_info.csv")
     G = nx.Graph()
     # Add nodes for each metro station
     for line, stations in metro_stations.items():
